@@ -1,5 +1,5 @@
 @echo off
-rem 这里是注释
+@rem 这里是注释 @符号的意思是这一样的命令执行情况不在dos下面显示。
 set/p var=
 set var=%var:~0,1%
 if %var% == 1 goto label1
