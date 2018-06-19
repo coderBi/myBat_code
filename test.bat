@@ -1,5 +1,5 @@
 @echo off
-@rem ÕâÀïÊÇ×¢ÊÍ @·ûºÅµÄÒâË¼ÊÇÕâÒ»ÑùµÄÃüÁîÖ´ĞĞÇé¿ö²»ÔÚdosÏÂÃæÏÔÊ¾¡£
+@rem è¿™é‡Œæ˜¯æ³¨é‡Š @ç¬¦å·çš„æ„æ€æ˜¯è¿™ä¸€æ ·çš„å‘½ä»¤æ‰§è¡Œæƒ…å†µä¸åœ¨dosä¸‹é¢æ˜¾ç¤ºã€‚
 set/p var=
 set var=%var:~0,1%
 if %var% == 1 goto label1
@@ -7,20 +7,20 @@ if %var% == 2 goto label2
 goto label3
 
 :label1
-echo ½øÈëÁËlabel1
+echo è¿›å…¥äº†label1
 pause
 exit
 
 :label2
-echo ½øÈëÁËlabel2
+echo è¿›å…¥äº†label2
 pause
 exit
 
 :label3
-rem =µÄ×ó±ß²»ÄÜÓĞ¿Õ¸ñ ·ñÔò±äÁ¿³ÉÁË¡°var ¡±  =ÓÒ±ß²»ÄÜÓĞ¿Õ¸ñ ·ñÔòvarµÄÖµ³ÉÁË¡° 1¡±
+rem =çš„å·¦è¾¹ä¸èƒ½æœ‰ç©ºæ ¼ å¦åˆ™å˜é‡æˆäº†â€œvar â€  =å³è¾¹ä¸èƒ½æœ‰ç©ºæ ¼ å¦åˆ™varçš„å€¼æˆäº†â€œ 1â€
 set var=1
 :loop
-rem gtr ±íÊ¾´óÓÚ  geq ´óÓÚ»òµÈÓÚ  »¹Òª×¢ÒâµÄÊÇ if goto±ØĞëÔÚÒ»ĞĞ ·ñÔòÓï·¨²»ÕıÈ·
+rem gtr è¡¨ç¤ºå¤§äº  geq å¤§äºæˆ–ç­‰äº  è¿˜è¦æ³¨æ„çš„æ˜¯ if gotoå¿…é¡»åœ¨ä¸€è¡Œ å¦åˆ™è¯­æ³•ä¸æ­£ç¡®
 if %var% geq 10 goto end
 echo %var%
 set/a var+=1

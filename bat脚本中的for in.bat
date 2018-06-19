@@ -1,25 +1,25 @@
 @echo off
-rem bat½Å±¾ÖÐµÄfor in ÊéÐ´
-rem bat½Å±¾ÖÐµÄ±äÁ¿ÓÃ %%±äÁ¿Ãû  ¶ødosÏÂÃæÖ»ÒªÒ»¸ö% Ò²¾ÍÊÇ %±äÁ¿Ãû
-rem %%a ±íÊ¾±äÁ¿Ãû  %a% ±íÊ¾ÏµÍ³»·¾³±äÁ¿È¡Öµ
+rem batè„šæœ¬ä¸­çš„for in ä¹¦å†™
+rem batè„šæœ¬ä¸­çš„å˜é‡ç”¨ %%å˜é‡å  è€Œdosä¸‹é¢åªè¦ä¸€ä¸ª% ä¹Ÿå°±æ˜¯ %å˜é‡å
+rem %%a è¡¨ç¤ºå˜é‡å  %a% è¡¨ç¤ºç³»ç»ŸçŽ¯å¢ƒå˜é‡å–å€¼
 
-rem ÊäÈëÑ­»·´ÎÊý¡£Òª×¢ÒâµÄÊÇÕâÀïµÄvar=ÊäÈë´ÎÊý Õâ¸ö=×óÓÒÁ½±ß¶¼²»ÄÜÓÐ¶àÓàµÄ¿Õ¸ñ
-@set /p times=ÊäÈëÑ­»·´ÎÊý: 
+rem è¾“å…¥å¾ªçŽ¯æ¬¡æ•°ã€‚è¦æ³¨æ„çš„æ˜¯è¿™é‡Œçš„var=è¾“å…¥æ¬¡æ•° è¿™ä¸ª=å·¦å³ä¸¤è¾¹éƒ½ä¸èƒ½æœ‰å¤šä½™çš„ç©ºæ ¼
+@set /p times=è¾“å…¥å¾ªçŽ¯æ¬¡æ•°: 
 
-rem set ÉèÖÃµÄ±äÁ¿¶¼ÊÇ»·¾³±äÁ¿ ¶¼ÐèÒªÓÃ %var%È¡Öµ
-rem ÕâÀï»áÌáÊ¾echo±»¹Ø±Õ ÉÏÃæµÄecho off µ¼ÖÂ²»ÄÜÕý³£´òÓ¡ %var%ÐÎÊ½±äÁ¿
-echo ÄúÊäÈëµÄÑ­»·´ÎÊýÊÇ£º%times%
+rem set è®¾ç½®çš„å˜é‡éƒ½æ˜¯çŽ¯å¢ƒå˜é‡ éƒ½éœ€è¦ç”¨ %var%å–å€¼
+rem è¿™é‡Œä¼šæç¤ºechoè¢«å…³é—­ ä¸Šé¢çš„echo off å¯¼è‡´ä¸èƒ½æ­£å¸¸æ‰“å° %var%å½¢å¼å˜é‡
+echo æ‚¨è¾“å…¥çš„å¾ªçŽ¯æ¬¡æ•°æ˜¯ï¼š%times%
 
-rem for /l in(1(ÆðÊ¼),2(µÝÔö»òµÝ¼õµÄÊýÁ¿),5(½áÊø)) ²ÎÊý±íÊ¾±äÁ¿ÒÀ´ÎµÝÔö»òµÝ¼õ /f ±íÊ¾Êý×éÎ»Ò»×éÎÄ¼þÁÐ±í¡£for %%i in(1, 10)±íÊ¾iÖ»ÄÜÈ¡1»ò10¡£forÁíÍâ»¹ÓÐ/d /r ²ÎÊý±È½Ï¸´ÔÓ
-rem inºóÃæµÄÀ¨ºÅÈç¹ûÊÇ 1,10 ³ÌÐò¾ÍÅÐ¶Ï 1 2 3 ... 10 Èç¹ûÊÇ10,1 ¾ÍÅÐ¶Ï 10 9 8 .... 1
-set /a i = Ñ­»·±äÁ¿
+rem for /l in(1(èµ·å§‹),2(é€’å¢žæˆ–é€’å‡çš„æ•°é‡),5(ç»“æŸ)) å‚æ•°è¡¨ç¤ºå˜é‡ä¾æ¬¡é€’å¢žæˆ–é€’å‡ /f è¡¨ç¤ºæ•°ç»„ä½ä¸€ç»„æ–‡ä»¶åˆ—è¡¨ã€‚for %%i in(1, 10)è¡¨ç¤ºiåªèƒ½å–1æˆ–10ã€‚forå¦å¤–è¿˜æœ‰/d /r å‚æ•°æ¯”è¾ƒå¤æ‚
+rem inåŽé¢çš„æ‹¬å·å¦‚æžœæ˜¯ 1,10 ç¨‹åºå°±åˆ¤æ–­ 1 2 3 ... 10 å¦‚æžœæ˜¯10,1 å°±åˆ¤æ–­ 10 9 8 .... 1
+set /a i = å¾ªçŽ¯å˜é‡
 
-rem ±íÊ¾Ö»ÄÜÈ¡Öµ 1 1 %times%
+rem è¡¨ç¤ºåªèƒ½å–å€¼ 1 1 %times%
 echo for %%i in (1,1,%times%): 
 for  %%i in (1,1,%times%) do echo %%i
 
-rem ±íÊ¾´Ó 1 µÝÔöµ½ %times%
+rem è¡¨ç¤ºä»Ž 1 é€’å¢žåˆ° %times%
 echo for /l %%i in (1,1,%times%): 
 for /l %%i in (1,1,%times%) do echo %%i
-rem ÔÝÍ£
+rem æš‚åœ
 pause
